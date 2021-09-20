@@ -9,26 +9,29 @@
 }
 </style>
 
-<nav class="navbar navbar-light fixed-top bg-primary" style="padding:0">
-  <div class="container-fluid mt-2 mb-2">
-  	<div class="col-lg-12">
-  		<div class="col-md-1 float-left" style="display: flex;">
-  		
-  		</div>
-      <div class="col-md-4 float-left text-white">
-        <large><b>ATN Shop Management System</b></large>
-      </div>
-	  	<div class="float-right">
-        <div class=" dropdown mr-4">
-            <a href="#" class="text-white dropdown-toggle"  id="account_settings" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?php echo $_SESSION['login_name'] ?> </a>
-              <div class="dropdown-menu" aria-labelledby="account_settings" style="left: -2.5em;">
-                <a class="dropdown-item" href="javascript:void(0)" id="manage_my_account"><i class="fa fa-cog"></i> Manage Account</a>
-                <a class="dropdown-item" href="ajax.php?action=logout"><i class="fa fa-power-off"></i> Logout</a>
-              </div>
+<nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+    <div class="container">
+        <a class="navbar-brand logo" href="index.php?page=home">ATN company</a>
+        <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1">
+            <span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse"
+             id="navcol-1">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item" role="presentation"><a class="nav-link" href="index.php?page=sales">Sales</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="pos/index.php">POS</a></li>
+                <?php if($_SESSION['login_type'] == 1): ?>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="index.php?page=inventory">Inventory</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="index.php?page=products">Products</a></li>
+                <?php endif; ?>
+                <?php if($_SESSION['login_type'] == 1): ?>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="index.php?page=users">Users</a></li>
+                <?php endif; ?>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="ajax.php?action=logout">Logout</a></li>
+
+            </ul>
         </div>
-      </div>
-  </div>
-  
+    </div>
 </nav>
 
 <script>

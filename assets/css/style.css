@@ -1641,9 +1641,8 @@ a.nav-item:hover, .nav-item.active {
     color: #fffafa;
 }
 main#view-panel{
-  margin-left: 200px; 
   width:calc(100% - 200px);
-  margin-top: 2.8em;
+  margin-top: 4.2em;
   padding: .5em
 }
 .toast{

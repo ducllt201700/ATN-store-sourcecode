@@ -22,7 +22,7 @@
         background: #80808045;
   }
   .modal-dialog.large {
-    width: 80% !important;
+    width: % !important;
     max-width: unset;
   }
   .modal-dialog.mid-large {
@@ -46,7 +46,7 @@
     max-height: unset;
 }
   #viewer_modal .modal-content {
-       background: navajowhite;
+      background: navajowhite;
     border: unset;
     height: calc(100%);
     display: flex;
@@ -57,8 +57,6 @@
     max-height: calc(100%);
     max-width: calc(100%);
   }
-
-
 span.select2-selection.select2-selection--single {
     min-height: 2rem;
   }
@@ -66,7 +64,6 @@ span.select2-selection.select2-selection--single {
 
 <body>
 	<?php include 'topbar.php' ?>
-	<?php include 'navbar.php' ?>
   <div class="toast" id="alert_toast" role="alert" aria-live="assertive" aria-atomic="true">
     <div class="toast-body text-white">
     </div>

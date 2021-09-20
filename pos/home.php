@@ -204,7 +204,7 @@ endif;
                               <td><b><?php echo $row['item_code'] ?></b></td>
                               <td><b><?php echo ucwords($row['name']) ?></b></td>
                               <td><b><?php echo $row['size'] ?></b></td>
-                              <td><img class="img-fluid" src="<?php echo $row['image']; ?>" alt="image" width="100"></td>
+                              <td><img class="img-fluid" src="<?php echo "../",$row['image']; ?>" alt="image" width="100"></td>
                               <td class="text-right"><b><?php echo number_format($row['price'],2) ?></b></td>
                             </tr>
                             <?php endwhile; ?>

@@ -32,15 +32,9 @@
                             </div>
 							<div class="form-group">
 								<label class="control-label">Size</label>
-								<select name="size" id="size" class="custom-select custom-select-sm">
-									<option>XS</option>
-									<option>S</option>
-									<option>M</option>
-									<option>L</option>
-									<option>XL</option>
-									<option>XXL</option>
-									<option>XXXL</option>
-								</select>
+								<input type="text" class="form-control form-control-sm" name="size">
+
+								</input>
 							</div>
 							<div class="form-group">
 								<label class="control-label">Price</label>
